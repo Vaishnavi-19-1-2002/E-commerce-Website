@@ -16,7 +16,7 @@
 main.frontpage {
   padding: 20px 0px 20px 0px;
 }
-.searchBar input  {
+.searchBar input {
   background-color: #fff;
   border: none;
 }
@@ -50,7 +50,7 @@ main.frontpage {
   text-transform: capitalize;
   margin: 25px 0 400px 0;
 }
-.info p{
+.info p {
   font-family: "Playfair Display", serif;
   font-style: italic;
   font-size: 20px;
@@ -65,7 +65,14 @@ main.frontpage {
 .left-align {
   text-align: left;
 }
-
+.heading h1 {
+  color: #000;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  display: block;
+}
 
 html {
   font-size: 62.5%; /* 16px x 62.5 = 10px = 1rem */
@@ -76,7 +83,7 @@ body {
   height: 100vh;
   background-color: #f8f9fa;
   font-size: 1.6rem;
-  font-family: Roboto,Arial,sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -88,9 +95,9 @@ body {
 .grid-container {
   display: grid;
   grid-template-areas:
-    'header'
-    'main'
-    'footer';
+    "header"
+    "main"
+    "footer";
   grid-template-columns: 1fr;
   grid-template-rows: 5rem 1fr 5rem;
   height: 100%;
@@ -111,7 +118,7 @@ footer {
 }
 /* Common */
 h1 {
-  font-size: 1.8rem;
+  /* font-size: 1.8rem; */
   padding: 1rem 0;
 }
 h2 {
@@ -133,10 +140,12 @@ ul {
 li {
   margin-top: 1rem;
 }
-input, select, textarea,
+input,
+select,
+textarea,
 button {
   border: none;
-  font-family: Roboto,Arial,sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: 17px 50px;
@@ -150,7 +159,7 @@ button {
 button {
   cursor: pointer;
 }
-button.primary:hover{
+button.primary:hover {
   background-color: #fff;
   color: #2577fd;
   border: 1px solid #2577fd;
@@ -169,7 +178,7 @@ button.small {
   background-color: #fff;
   border: 1px solid black;
 }
-.delete{
+.delete {
   border: 1px solid black;
 }
 main {
@@ -193,9 +202,9 @@ a.brand {
   background-color: #00b1ff;
   color: #ffffff;
   border-radius: 50%;
-  padding: .2rem .7rem;
+  padding: 0.2rem 0.7rem;
   font-size: 1.4rem;
-  margin-left: .2rem;
+  margin-left: 0.2rem;
 }
 .row {
   display: flex;
@@ -231,6 +240,8 @@ img.small {
 img.medium {
   max-width: 29rem;
   width: 100%;
+  width: 308px;
+  height: 376px;
 }
 img.large {
   width: 90%;
@@ -273,24 +284,24 @@ img.large {
 }
 .success {
   color: #26a541;
-} 
+}
 .danger {
   color: #ff6161;
 }
-.alert{
+.alert {
   padding: 1rem;
   border: 0.1rem solid transparent;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
-.alert-info{
+.alert-info {
   color: #2020a0;
   background-color: #e8e0ff;
 }
-.alert-danger{
+.alert-danger {
   color: #a02020;
   background-color: #ffe0e0e0;
 }
-.alert-success{
+.alert-success {
   color: #26a541;
   background-color: #eeffe0;
 }
@@ -335,7 +346,7 @@ main {
   margin: 0;
   margin-top: 0.4rem;
 }
-.dropdown:hover .dropdown-content{
+.dropdown:hover .dropdown-content {
   display: block;
 }
 /* Checkout Steps */
@@ -355,12 +366,13 @@ main {
   width: 100%;
   border-collapse: collapse;
 }
-.table tbody tr:nth-of-type(odd){
+.table tbody tr:nth-of-type(odd) {
   background-color: #fff;
 }
-.table td, .table th{
+.table td,
+.table th {
   text-align: left;
-  border: .1rem solid #eeeeee;
+  border: 0.1rem solid #eeeeee;
   padding: 0.5rem;
 }
 .table button {
